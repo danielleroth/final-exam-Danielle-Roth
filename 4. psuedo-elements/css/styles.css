@@ -1,0 +1,46 @@
+/*==============================*/
+/*  Psuedo Elements             */
+/*==============================*/
+
+/* 
+  Styling for 1st Line 
+  First Line, of First Paragraph
+ */
+p:first-of-type:first-line {
+  color: #b31b34;
+  font-style: italic;
+}
+
+/* 
+  Styling for Drop Cap 
+  First Letter, of First Paragraph
+*/
+p:first-of-type:first-letter{
+  background: #b31b34;
+  color: #fff;
+  font-size: 3em;
+  float: left;
+  margin: 0 10px 10px 10px;
+  padding: 10px;
+}
+
+
+/*==============================*/
+/* DO NOT EDIT BELOW THIS LINE */
+/*==============================*/
+/* Styling for EWU Seal */
+img {
+  float: left;
+  margin: 10px;
+}
+
+.container {
+	margin: 0 auto;
+	width: 60%;
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  	font-size: 1.25em;
+}
+

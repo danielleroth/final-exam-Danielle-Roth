@@ -1,0 +1,79 @@
+/*==============================*/
+/* Positioning					*/
+/*==============================*/
+
+/* Position Headers & Paragraph w/in Figure */
+/*parent*/
+figure {
+	position: relative;
+}
+
+/*child*/
+img {
+	position:absolute;
+	top: 0px;
+}
+
+h3 {
+	position: absolute;
+	top: 4px;
+	left: -25px;
+	z-index: 1;
+}
+
+/* 
+	- Hover Over Figure (any part), Caption Appears 
+	- Transition Caption, `p` transitions in .5 seconds
+*/
+
+/*child 2*/
+figure p {
+	position: absolute;
+	top: 250px;
+	opacity: 0;
+	-webkit-transition: opacity .5s ease;
+}
+
+
+figure p:hover {
+		opacity: 100;
+}
+
+/* RAH! i need to have the figure, not the paragraph activate the transition......*/
+
+/*==============================*/
+/* DO NOT EDIT BELOW THIS LINE */
+/*==============================*/
+.container {
+	margin: 0 auto;
+	width: 80%;
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1.25em;
+}
+
+figure {
+	background: #000;
+	border: 10px solid #000;
+	height: 300px;
+	float: left;
+	width: 200px;
+}
+
+h3 {
+	background: rgba(0,0,0,.75);
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+}
+
+p {
+	background: rgba(0,0,0,.75);
+	color: #fff;
+	font-size: .75em;
+	margin: 0;
+	padding: 10px 0 10px 0;
+	text-align: center;	
+}
+

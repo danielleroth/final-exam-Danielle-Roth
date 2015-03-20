@@ -1,0 +1,79 @@
+/* 
+  * OK to target WebKit browsers ONLY (just for today)    
+*/
+
+/* Create keyframe animation named `scaleup` */
+
+@-webkit-keyframes scaleup {
+  from {
+    transform: scale(.25);
+  }
+
+  to {
+    transform: scale(1));
+  }
+
+}
+
+/* Create keyframe animation named `moveleft` */
+
+@-webkit-keyframes moveleft {
+  from {
+    transform: translateX(200px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+
+}
+
+
+/* `.square` class uses `scaleup` animation in `3s` seconds */
+.square {
+
+  -webkit-animation: scaleup 3s 1 ease-in-out;
+
+}
+
+
+/* `big` class uses `moveleft` animation in `3s` seconds */
+.big {
+  -webkit-animation: moveleft 3s 1 ease-in-out;
+}
+
+
+/*==============================*/
+/* DO NOT EDIT BELOW THIS LINE */
+/*==============================*/
+aside {
+   border: 1px solid #333;
+   height: 100px;
+   overflow: hidden;
+   margin: 200px auto 0 auto;
+   padding: 10px;
+   width: 270px;
+}
+
+.square {
+  background: #b31b34;
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+p {
+  font-size: 2em;
+  line-height: 34px;
+  margin: 0 0 0 120px;
+}
+
+.start,
+.something {
+  color: #666;
+}
+
+.big {
+  color: #b31b34;
+  font-weight: bold;
+}
